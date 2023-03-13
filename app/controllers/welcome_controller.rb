@@ -11,7 +11,7 @@ class WelcomeController < ApplicationController
     @menu_options = [
       "Choose the beta partner",
       "Add Product",
-      "Edit Product",
+      "trueut",
       "Delete Product",
       "Exit"
     ]
