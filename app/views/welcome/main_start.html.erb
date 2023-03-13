@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to My App</h1>
+</header>
+<main>
+    <h2>Menu</h2>
+    <ul>
+        <li>
+            <form action="/" method="post">
+                <input type="hidden" name="choice" value="1">
+                <input type="submit" value="Choose the beta partner">
+            </form>
+        </li>
+        <li>
+            <form action="/" method="post">
+                <input type="hidden" name="choice" value="2">
+                <input type="submit" value="Add Product">
+            </form>
+        </li>
+        <li>
+            <form action="/" method="post">
+                <input type="hidden" name="choice" value="3">
+                <input type="submit" value="Edit Product">
+            </form>
+        </li>
+        <li>
+            <form action="/" method="post">
+                <input type="hidden" name="choice" value="4">
+                <input type="submit" value="Delete Product">
+            </form>
+        </li>
+        <li>
+            <form action="/" method="post">
+                <input type="hidden" name="choice" value="5">
+                <input type="submit" value="Exit">
+            </form>
+        </li>
+    </ul>
+    <% if @choice == 1 %>
+    <h2>Choose one of the partners</h2>
+    <ul>
+        <li>
+            <form action="/" method="post">
+                <input type="hidden" name="partner" value="vivino">
+                <input type="submit" value="Vivino">
+            </form>
+        </li>
+        <li>
+            <form action="/" method="post">
+                <input type="hidden" name="partner" value="amazon">
+                <input type="submit" value="Amazon">
+            </form>
+        </li>
+    </ul>
+    <% elsif @choice == 2 %>
+    <!-- Add product form -->
+    <% elsif @choice == 3 %>
+    <!-- Edit product form -->
+    <% elsif @choice == 4 %>
+    <!-- Delete product form -->
+    <% else %>
+    <%# Do nothing %>
+    <% end %>
+</main>
+</body>
+</html>
+
+

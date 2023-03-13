@@ -1,0 +1,2 @@
+class ShowMenuController < ApplicationController
+end

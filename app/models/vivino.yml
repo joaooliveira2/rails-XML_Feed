@@ -1,0 +1,10 @@
+- product:
+    product_name: vinho
+    price: 10.99
+    quantity_is_minimum: false
+    bottle_size: 750ml
+    bottle_quantity: 1
+    link: https://example.com/product
+    inventory_count: 50
+    product_id: PROD-001
+

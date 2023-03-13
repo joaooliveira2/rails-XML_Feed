@@ -1,0 +1,28 @@
+product:
+       id: 312312
+       name: joao
+       page_title: joaot
+       description: joaod
+       price: 15
+       discount: 30
+       weight: 49
+       stock: 3
+       stock_unlimited: false
+       sku: 2831
+       brand: branca
+       barcode: 3239812
+       google_product_category: wine
+       featured: idk
+       status: available
+       created_at: vivino
+       updated_at: jumpseller
+       package_format: bottle
+       length: 12
+       width: 10
+       height: 10
+       diameter: 40
+       permalink: something
+       categories: drinks
+       images: none
+       variants: some
+
